@@ -67,8 +67,6 @@
             </div>
         </div>
 
-       
-
         <div class="about">
             <div class="container">
                 <div class="title">אז מה כלול בארוע שלכם?</div>
@@ -102,20 +100,67 @@
             </div>
         </div>
 
-        <div class="contact">
+
+        <div class="contact leftFade">
             <div class="container">
                 <div class="title">יצירת קשר</div>
+                <div class="flex">
+                    <div class="contactImage">
+                        <img src="https://sigalbremer.co.il/wp-content/uploads/2020/10/%D7%A1%D7%9E%D7%A1%D7%94-%D7%91%D7%95%D7%9B%D7%A8%D7%99%D7%AA443-912x1024.jpg" alt="" srcset="">
+                    </div>
+
+                    <div class="form">
+                        <form action="#" method="post" id="form">
+                            <div class="formGroup">
+                                <label for="Full Name">שם מלא</label>
+                                <input type="text" name="" placeholder="לדוגמא: דניאל פוזיילוב" id="fullName">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+
+                            <div class="formGroup">
+                                <label for="Full Name">אמייל</label>
+                                <input type="text" name="" placeholder="לדוגמא: example123@gmail.com" id="email">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+
+                            <div class="formGroup">
+                                <label for="Full Name">מספר פלאפון</label>
+                                <input type="text" name="" placeholder="לדוגמא: 05412345685" id="phone">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+
+                            <div class="formGroup">
+                                <label for="Full Name">הודעה</label>
+                                <input type="text" name="" id="message" placeholder="גוף ההודעה">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <br>
+                            <div class="buttons">
+                                <input type="submit" value="Send Form" class="btn btn-submit">
+                                <input type="reset" id="resetForm" value="Reset Form" class="btn btn-submit"></div>
+                        </form>
+
+                    </div>
+                </div>
             </div>
         </div>
-
 
         <footer>
             <p>אתר זה נבנה על ידי דניאל פוזיילוב</p>
         </footer>
 
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer="defer"></script>
-        <script src="script.js" defer="defer"></script>
+        <script src="js/script.js"></script>
+        <script src="js/form.js"></script>
+        <script src="js/animation.js"></script>
     </body>
 </html>

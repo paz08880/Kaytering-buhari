@@ -166,6 +166,33 @@ nav ul li a:hover::before, nav ul li a:hover::after{
     }
 }
 
+
+@media(max-width:700px){
+    .banner{
+        align-items: center;
+        text-align: center;
+    }
+
+    .container .flex .content{
+       align-items: center;
+    }
+    
+    .container .flex .img{
+        display: none;
+    }
+
+    .container .flex .content p{
+        margin-left:inherit!important;
+    }
+}
+
+@media(max-width:500px){
+    .container .flex .content p{
+        width: 100% !important;
+    }
+}
+
+
 .banner{
     min-width: 100%;
     min-height: 60vh;
@@ -298,3 +325,165 @@ footer{
     background-color: #FFFFFF;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
 }
+/* End Footer */
+
+/* Contact */  
+  #contact {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+  
+.form{
+    /*width: 100%;*/
+    padding:20px;
+}
+
+#form{
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-in-out;    
+    padding:15px;
+    position: relative;
+}
+
+.formGroup label{
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.formGroup input{
+    min-width:450px;
+    border:none;
+    border-bottom: 1px solid rgba(46, 229, 157, 0.4);
+    outline: none;
+    transition: 0.4s ease-in-out;
+    padding: 5px 16px;
+    border-radius: 10px;
+}
+
+.formGroup input:focus{
+    border: 1px solid rgba(46, 229, 157, 0.4);
+    transition: 6s ease-in-out;
+    outline: none;
+}
+
+
+
+.formGroup.success input {
+    border-color: #2ecc71;
+}
+
+.formGroup.error input {
+    border-color: #e74c3c;
+}
+
+.formGroup i {
+    visibility: hidden;
+    position: absolute;
+    top: 52px;
+    right: 20px;
+}
+
+.formGroup.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.formGroup.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.formGroup small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.formGroup.error small {
+    visibility: visible;
+}
+
+
+
+.btn-submit{
+    padding:5px 16px;
+    border-radius: 10px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    margin:10px;
+    float:right;
+    text-transform: uppercase;
+    box-shadow: 0 9px #999;
+}
+
+
+.btn-submit:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.contactImage img{
+    width: 400px;
+    border-radius: 10px;
+}
+
+@media(max-width:990px){
+    .formGroup input{
+        min-width:auto!important;
+    }
+}
+
+/* End Contact */
+
+/* Animations */
+.leftFade{
+    opacity: 0;
+    transition: all 1s;
+    filter: blue(5px);
+    transform: translateX(-100%);
+}
+
+.showleftFade{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.fade{
+    opacity: 0;
+    transition: all 2.5s;
+    filter: blue(5px);
+}
+
+.showfade{
+    opacity: 1;
+    filter: blur(0);
+}
+
+.rightFadeAnim{
+    opacity: 0;
+    transition: all 1s;
+    filter: blue(5px);
+    transform: translateX(100%);
+}
+
+.showleftFade{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* End Animations */
