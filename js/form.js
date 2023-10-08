@@ -1,5 +1,4 @@
 const form = document.getElementById('form');
-const resetForm = document.getElementById('resetForm');
 
 let correctAll = [];
 
@@ -82,30 +81,30 @@ function cheackInputs(){
 
 
     if(fullNameValue === ''){
-        setError(fullName, 'Fill this field');
+        setError(fullName, 'מלא את הפרטים');
     }else{
         success(fullName);
     }
 
     if(emailValue === ''){
-        setError(email, 'Fill this field');
+        setError(email, 'מלא את הפרטים');
     }else if(!isEmail(emailValue)){
-        setError(email, 'This email address is incorrect');
+        setError(email, 'כתובת אמייל שגויה');
     }else{
         success(email);
     }
 
     if(phoneValue === ''){
-        setError(phone, 'Fill this field');
+        setError(phone, 'מלא את הפרטים');
     }else if(!phoneValue.match(regex) || phoneValue.length != 10){
-        setError(phone, 'This phone number is incorrect');
+        setError(phone, 'מספר פלאפון שגוי');
     }else{
         success(phone);
     }
 
 
     if(messageValue === ''){
-        setError(message, 'Fill this field');
+        setError(message, 'מלא את הפרטים');
     }else{
         success(message);
     };
@@ -132,22 +131,3 @@ function isEmail(email) {
 }
 
 
-resetForm.addEventListener("click", (e) => {
-        
-    const fullName = document.getElementById('fullName');          
-    const email = document.getElementById('email');
-    const phone = document.getElementById('phone');
-    const message = document.getElementById('message');
-    let formGroup = document.querySelectorAll('.formGroup');
-
-    fullName.value = "";
-    email.value = "";
-    phone.value = "";
-    message.value = "";
-
-    formGroup.forEach(input => {
-        input.classList.remove('success');
-        input.classList.remove('error');
-    })
-
-})
