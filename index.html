@@ -69,51 +69,152 @@
 
         <div class="about">
             <div class="container">
-                <div class="title">אז מה כלול בארוע שלכם?</div>
-                <div class="text">
-                    <p>
-                        קייטרינג 'טעמי הבוכריים' הוא שמו של טעמי הבוכריים בגאווה, אהבה, ומסורת. אנחנו
-                        מתמחים באוכל בוכרי אותנטי ומציעים חווית אירוח מוקפדת ומהנה.
-                    </p>
-                    <p>
-                        מה אנחנו מציעים:
-                    </p>
-                    <ul>
-                        <li>תפריט מגוון: המצרכים הטריים ביותר והמתקונים המסורתיים ביותר מצוים בתפריט שלנו.</li>
-                        <li>אירועים מותאמים: סדנאות בישול, אירועים פרטיים או חגים, אנחנו מוכנים לשדרג כל
-                            אירוע שלך.</li>
-                        <li>כשרות: כל המנות שלנו מוכנות בכשרות רבה ובהתחשבות מראש לכל דרישה מיוחדת.</li>
-                        <li>חוויית לקוח: אנחנו מתחייבים לשירות מעולה ולשמח את הלקוחות שלנו.</li>
-                    </ul>
-                    <p>
-                        אנחנו מזמינים אתכם לשובך ולטעום את טעמי הבוכריים שאנו מספקים ולחוות את המסע
-                        הקולינרי המרהיב שיש להציע.
-                    </p>
+                <div class="title">אז מה אנחנו מציעים?</div>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <h3>תפריט מגוון</h3>
+                            <p class="card-text">
+                                אוכל בוכרי באיכות גבוהה, כשתשים דגש על שימור על טריות וטעם טוב, ותשתמש בחומרי גלם איכותיים. וטריים בלבד!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h3>כשרות</h3>
+                            <p class="card-text">
+                                כל המנות שלנו מוכנות בכשרות רבה ובהתחשבות מראש לכל דרישה מיוחדת
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h3>חוויית הלקוח</h3>
+                            <p class="card-text">
+                                אנחנו מתחייבים לשירות מעולה ולשמח את הלקוחות שלנו
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h3>אפשרות להתאים אישית</h3>
+                            <p class="card-text">
+                                קייטרינג בוכרי יכול להיות גמיש ולהתאים את התפריט לצרכי הלקוח. זה מציע אפשרות לבחור את המנות האהובות ולהתאים את המזון לתפריט המבוקש
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h3>יכולת להתאים לכל אירוע</h3>
+                            <p class="card-text">
+                                קייטרינג בוכרי יכול להתאים לכל סוגי האירועים, בין אם מדובר באירוע פרטי, חתונה, בר/בת מצווה, יום הולדת או אירוע עסקי. זה יכול להתאים לאירועים קטנים או גדולים כאחד.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h3>Full access</h3>
+                            <p class="card-text">
+                                Experience it all. Get Full Access now.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
+                <p style = "text-align: center;padding:20px;"> אנחנו מזמינים אתכם לשובך ולטעום את טעמי הבוכריים שאנו מספקים ולחוות את המסע
+                    הקולינרי המרהיב שיש להציע.</p>
 
             </div>
         </div>
+
+        <style>
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .column {
+                width: 100%!important;
+                padding: 0 1em 1em;
+                text-align: center;
+                gap: 20px;
+                margin: 20px 0;
+            }
+
+            h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+}
+
+.card-text {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+            
+
+            @media(min-width: 768px) {
+                .column {
+                    flex: 0 50%;
+                    max-width: 50%;
+                    text-align: center;
+                    gap: 20px;
+                }
+            }
+
+            @media(min-width:990px) {
+                .column {
+                flex: 0 0 33.33%;
+                max-width: 33.33%;
+                gap: 20px;
+            }    
+            }
+        </style>
 
         <div class="food">
             <div class="container">
                 <div class="title">מאכלי העדה הבוכרית</div>
+                <div class="cards">
+                    <div class="row">
+                        <div class="image"><img src="images/bannerr.jpeg" alt="" srcset=""></div>
+                        <div class="text">
+                            <p>מאכל "גוז'ג'יז'ה" הוא אכילה בוכרית מסורתית שמתאפיינת בכך שהיא מוכנה מבשר כבש
+                                טחון, נתחי בשר, או מגרסת בשר כבש, כל זאת בתוספת תבלינים ותפו"ת (תפוחי אדמה).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text">
+                            <p>מאכל "גוז'ג'יז'ה" הוא אכילה בוכרית מסורתית שמתאפיינת בכך שהיא מוכנה מבשר כבש
+                                טחון, נתחי בשר, או מגרסת בשר כבש, כל זאת בתוספת תבלינים ותפו"ת (תפוחי אדמה).
+                            </p>
+                        </div>
+                        <div class="image"><img src="images/WhatsApp Image 2023-10-08 at 18.11.15.jpeg" alt="" srcset=""></div>
+                    </div>
+
+                </div>
             </div>
         </div>
-
 
         <div class="contact leftFade">
             <div class="container">
                 <div class="title">לפרטים נוספים והזמנות</div>
-                <div class="flex">
-                    <div class="contactImage">
-                        <img src="images/contact.jpeg" alt="" srcset="">
-                    </div>
-
+                
                     <div class="form">
                         <form action="#" method="post" id="form">
                             <div class="formGroup">
                                 <label for="Full Name">שם מלא</label>
-                                <input type="text" name="" placeholder="לדוגמא: דניאל פוזיילוב" id="fullName">
+                                <input
+                                    type="text"
+                                    name=""
+                                    placeholder="לדוגמא: דניאל פוזיילוב"
+                                    id="fullName"
+                                    autocomplete="off">
                                 <i class="fas fa-check-circle"></i>
                                 <i class="fas fa-exclamation-circle"></i>
                                 <small>Error message</small>
@@ -121,7 +222,12 @@
 
                             <div class="formGroup">
                                 <label for="Full Name">אמייל</label>
-                                <input type="text" name="" placeholder="לדוגמא: example123@gmail.com" id="email">
+                                <input
+                                    type="text"
+                                    name=""
+                                    placeholder="לדוגמא: example123@gmail.com"
+                                    id="email"
+                                    autocomplete="off">
                                 <i class="fas fa-check-circle"></i>
                                 <i class="fas fa-exclamation-circle"></i>
                                 <small>Error message</small>
@@ -129,7 +235,12 @@
 
                             <div class="formGroup">
                                 <label for="Full Name">מספר פלאפון</label>
-                                <input type="text" name="" placeholder="לדוגמא: 05412345685" id="phone">
+                                <input
+                                    type="text"
+                                    name=""
+                                    placeholder="לדוגמא: 05412345685"
+                                    id="phone"
+                                    autocomplete="off">
                                 <i class="fas fa-check-circle"></i>
                                 <i class="fas fa-exclamation-circle"></i>
                                 <small>Error message</small>
@@ -137,17 +248,21 @@
 
                             <div class="formGroup">
                                 <label for="Full Name">הודעה</label>
-                                <input type="text" name="" id="message" placeholder="גוף ההודעה">
+                                <input
+                                    type="text"
+                                    name=""
+                                    id="message"
+                                    placeholder="גוף ההודעה"
+                                    autocomplete="off">
                                 <i class="fas fa-check-circle"></i>
                                 <i class="fas fa-exclamation-circle"></i>
                                 <small>Error message</small>
                             </div>
-                            
+
                             <br>
-                                <input type="submit" value="שלח" class="btn btn-submit">
+                            <input type="submit" value="שלח" class="btn btn-submit">
                         </form>
 
-                    </div>
                 </div>
             </div>
         </div>
