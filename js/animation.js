@@ -1,10 +1,9 @@
 const observer = new IntersectionObserver((enteries) => {
     enteries.forEach((entery) => {
-        //console.log(entery);
         if(entery.isIntersecting){
-            entery.target.classList.add('showleftFade');
+            entery.target.classList.add('show-animation');
         }else{
-            entery.target.classList.remove('showleftFade');
+            entery.target.classList.remove('show-animation');
         }
     })
 })
@@ -20,7 +19,7 @@ fade.forEach((element) => {
 })
 
 
-const rightFadeAnim = document.querySelectorAll('.rightFadeAnim');
-fade.forEach((element) => {
+const righFade = document.querySelectorAll('.righFade');
+righFade.forEach((element) => {
     observer.observe(element);
 })
