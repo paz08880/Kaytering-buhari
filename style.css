@@ -49,6 +49,7 @@ nav .logo{
 nav ul{
     display: flex;
     justify-content: space-around;
+    direction: rtl;
 }
 
 nav ul li{
@@ -199,17 +200,16 @@ nav ul li a:hover::before, nav ul li a:hover::after{
 
 .banner{
     min-width: 100%;
-    min-height: 60vh;
+    min-height: 70vh;
     padding:20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-    background-image: url('images/bannerr.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-color: rgb(242, 163, 163);
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+
 }
 
 .container{
@@ -220,56 +220,68 @@ nav ul li a:hover::before, nav ul li a:hover::after{
 .container .flex{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap:20px;
 }
 
 .container .flex .content{
     display: flex;
     flex-direction: column;
-    direction: rtl;
+    align-items: center;
+    justify-content: center;
 }
 
 .container .flex .content .main-title{
     margin:20px 0;
-    font-size: 28px;
-    color:#fff;
+    font-size: 32px;
+    color:#433;
     font-weight: bold;
 }
 
 .container .flex .content p{
-    width:60%;
+    width:50%;
     word-wrap: break-word;
-    margin-left: auto;
+    text-align: center;
+    direction: rtl;
     line-height: 26px;
-    color:#fff;
+    color:#433;
+    font-weight: bold;
 }
 
 .container .flex .content .buttons{
     margin:20px 0;
     display: flex;
-    gap:20px;
+    gap:30px;
     flex-direction: row;
 }
 
-.container .flex .content .buttons button{
+.container .flex .content .buttons a{
     padding: 8px 16px;
     width: 150px;
     border-radius: 200px;
-    border: none;
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
 
-.container .flex .content .buttons button:nth-child(2){
+.container .flex .content .buttons a:nth-child(2){
     background-color: #0E2431;
     color: #fff;
+    border: 0.5px solid #fff;
 }
 
-.container .flex .content .buttons button:hover{
+.container .flex .content .buttons a:nth-child(1){
+    background-color: #FFFFFF;
+    color: #0E2431;
+    border: 0.5px solid #0E2431;
+}
+
+.container .flex .content .buttons a:hover{
     transform: scale(1.1);
     transition: 0.4s ease-in-out;
 }
+
 
 
 
@@ -282,7 +294,8 @@ nav ul li a:hover::before, nav ul li a:hover::after{
 
 
 .title{
-    margin: 20px 0;
+    margin: 40px 0;
+    padding-bottom:20px;
     font-weight: bold;
     font-size: 24px;
     text-align: center;
@@ -496,7 +509,7 @@ footer{
 
 @media(max-width:990px){
     .formGroup input{
-        min-width:auto!important;
+        min-width:250px;
     }
     .contactImage{
         display: none;
@@ -508,11 +521,6 @@ footer{
     .form{
         width: 100%;
     }
-
-    .formGroup{
-        width: 80%!important;
-    }
-
 }
 
 /* End Contact */
@@ -618,3 +626,45 @@ footer{
 }
 
 /* End Food cards*/
+ 
+/* Bar */
+#myBtn, #phone{
+    width: 45px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 25px;
+    bottom:20px;
+    z-index: 99;
+    font-size: 18px;
+    outline: none;
+    border-radius: 50%;
+    color:#433;
+    transition:0.3s ease-in-out;
+    cursor: pointer;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border:1px solid #002057;
+}
+
+#phone{
+    bottom:80px;
+}
+
+#myBtn:hover, #phone:hover{
+    transition:0.050s ease-in-out;
+    transform:scale(1.1);
+    background-color: rgb(242, 163, 163);
+    color:#fff;
+    border:1px solid #fff!important;
+}
+
+.phone{
+    background-color: rgb(242, 163, 163);;
+    color: white!important;
+    transition:0.3s ease-in-out;
+}
+/* End Bar */

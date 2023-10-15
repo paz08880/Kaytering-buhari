@@ -34,6 +34,9 @@
                         <a href="#events">ארועים</a>
                     </li>
                     <li>
+                        <a href="#about">אודות</a>
+                    </li>
+                    <li>
                         <a href="#food">מאכלים</a>
                     </li>
                     <li>
@@ -42,6 +45,7 @@
                     <li>
                         <a href="#contact">יצירת קשר</a>
                     </li>
+
                 </ul>
             </nav>
         </header>
@@ -49,25 +53,22 @@
         <div class="banner">
             <div class="container">
                 <div class="flex">
-                    <div class="img">
-                        dsadsa
-                    </div>
                     <div class="content">
                         <div class="main-title">ברוכים הבאים לבוכרי עתיק בוטיק</div>
                         <p>האתר שמביא אליכם את הטעמים האמיתיים של בוכריה. אנחנו מזמינים אתכם להשתגע
                             בטעמי האוכל המרשימים והמוכרים שלנו, המבוצעים באהבה ובכשרות רבה. הצטרפו אלינו
                             ותחוו את התרבות והטעמים האותנטיים של בוכריה, יחד איתנו!</p>
                         <div class="buttons">
-                            <button>מידע עלינו</button>
-                            <button>יצירת קשר
-                            </button>
+                            <a href = "#about">מידע עלינו</a>
+                            <a href = "#contact">יצירת קשר</a>
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="about">
+        <div class="about" id = "about">
             <div class="container">
                 <div class="title">אז מה אנחנו מציעים?</div>
 
@@ -153,6 +154,22 @@
                         <div class="image"><img src="images/WhatsApp Image 2023-10-08 at 18.11.15.jpeg" alt="" srcset=""></div>
                     </div>
 
+                    <div class="row leftFade">
+                        <div class="image"><img src="images/bannerr.jpeg" alt="" srcset=""></div>
+                        <div class="text">
+                            <p>מאכל "גוז'ג'יז'ה" הוא אכילה בוכרית מסורתית שמתאפיינת בכך שהיא מוכנה מבשר כבש
+                                טחון, נתחי בשר, או מגרסת בשר כבש, כל זאת בתוספת תבלינים ותפו"ת (תפוחי אדמה).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row righFade">
+                        <div class="text">
+                            <p>מאכל "גוז'ג'יז'ה" הוא אכילה בוכרית מסורתית שמתאפיינת בכך שהיא מוכנה מבשר כבש
+                                טחון, נתחי בשר, או מגרסת בשר כבש, כל זאת בתוספת תבלינים ותפו"ת (תפוחי אדמה).
+                            </p>
+                        </div>
+                        <div class="image"><img src="images/WhatsApp Image 2023-10-08 at 18.11.15.jpeg" alt="" srcset=""></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,7 +212,7 @@
                                     type="text"
                                     name=""
                                     placeholder="לדוגמא: 05412345685"
-                                    id="phone"
+                                    id="phoneNumber"
                                     autocomplete="off">
                                 <i class="fas fa-check-circle"></i>
                                 <i class="fas fa-exclamation-circle"></i>
@@ -223,7 +240,12 @@
             </div>
         </div>
 
-        <footer>
+        <div class="bar">
+            <div><a href = "tel:+972546129620"><i id="phone" class="fa fa-phone" title="חיוג מהיר"></i></a></div>
+            <div><i id="myBtn" onclick = "topFunction()"  class="fa fa-arrow-up" title="Back to Top"></i></div>
+        </div>
+
+        <footer  id = "contact">
             <p>אתר זה נבנה על ידי דניאל פוזיילוב</p>
         </footer>
 
