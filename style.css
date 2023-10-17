@@ -195,8 +195,16 @@ nav ul li a:hover::before, nav ul li a:hover::after{
     .container .cards .row{
         flex-direction: column!important;
     }
+    .container .cards .row .image {
+        order: 2; /* Change the order of image on smaller screens */
+    }
+
+    .container .cards .row .text {
+        order: 1; /* Change the order of text on smaller screens */
+    }
     .container .cards .row .text p{
-        width: 100%!important;
+        width: 90%!important;
+        margin: 0 auto;
         height: 100%!important;
     }
 }
@@ -219,7 +227,6 @@ nav ul li a:hover::before, nav ul li a:hover::after{
     background-color: rgb(242, 163, 163);
     border-bottom-left-radius:50%;
     border-bottom-right-radius:50%;
-
 }
 
 .container{
@@ -527,9 +534,6 @@ footer{
     .container .flex{
         justify-content: center!important;
     }
-
-   
-        
     .form{
         width: 100%;
     }
@@ -543,6 +547,13 @@ footer{
     transition: all 2s;
     filter: blue(5px);
     transform: translateX(-100%);
+}
+
+@media(max-width:990px){
+    .leftFade, .righFade{
+        opacity: 1!important;
+        transform: translateX(0%)!important;
+    }
 }
 
 .showleftFade{
@@ -614,6 +625,15 @@ footer{
     gap:20px;
 }
 
+.image {
+    flex: 1; /* Set appropriate styles for image div */
+}
+
+.text {
+    flex: 1; /* Set appropriate styles for text div */
+}
+
+
 .container .cards .row .image img{
     padding: 20px;
     width: 450px;
@@ -622,8 +642,16 @@ footer{
     padding: var(--s);
     border: calc(2*var(--s)) solid #0000;
     outline: 1px solid #000;
+    margin: 0 auto;
     outline-offset: calc(-1*var(--s));
     background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0);
+}
+
+@media(max-width:990px){
+    .container .cards .row .image img{
+        width: 400px!important;
+        height: 280px!important;
+    }
 }
 
 .container .cards .row .text p{
