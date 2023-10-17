@@ -176,6 +176,8 @@ nav ul li a:hover::before, nav ul li a:hover::after{
     .banner{
         align-items: center;
         text-align: center;
+        border-bottom-left-radius:0%!important;
+        border-bottom-right-radius:0%!important;
     }
 
     .container .flex .content{
@@ -188,6 +190,14 @@ nav ul li a:hover::before, nav ul li a:hover::after{
 
     .container .flex .content p{
         margin-left:inherit!important;
+    }
+
+    .container .cards .row{
+        flex-direction: column!important;
+    }
+    .container .cards .row .text p{
+        width: 100%!important;
+        height: 100%!important;
     }
 }
 
@@ -517,6 +527,8 @@ footer{
     .container .flex{
         justify-content: center!important;
     }
+
+   
         
     .form{
         width: 100%;
