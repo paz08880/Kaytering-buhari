@@ -172,7 +172,7 @@ nav ul li a:hover::before, nav ul li a:hover::after{
 }
 
 
-@media(max-width:700px){
+@media(max-width:900px){
     .banner{
         align-items: center;
         text-align: center;
@@ -205,8 +205,11 @@ nav ul li a:hover::before, nav ul li a:hover::after{
     .container .cards .row .text p{
         width: 90%!important;
         margin: 0 auto;
+        text-align: center;
         height: 100%!important;
     }
+   
+
 }
 
 @media(max-width:500px){
@@ -654,16 +657,24 @@ footer{
     }
 }
 
+
 .container .cards .row .text p{
     padding: 20px;
     display: flex;
     align-items: center;
     width: 550px;
-    height: 450px;
     border-radius: 10%;
-    text-align: center;
-    
+    text-align: right;
+    direction: rtl;
 }
+
+.container .cards .row .text span{
+    direction: rtl;
+    display: flex;
+    padding: 20px;
+    font-weight: bold;
+}
+
 
 /* End Food cards*/
  
