@@ -205,11 +205,13 @@ nav ul li a:hover::before, nav ul li a:hover::after{
     .container .cards .row .text p{
         width: 90%!important;
         margin: 0 auto;
-        text-align: center;
+        text-align: center!important;
         height: 100%!important;
     }
-   
 
+    .container .cards .row .text span{
+        justify-content: center!important;
+    }
 }
 
 @media(max-width:500px){
