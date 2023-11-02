@@ -17,7 +17,7 @@ form.addEventListener('submit', e => {
  cheackInputs();
  if(correctAll.length === 4){
 
-    const url = 'changeToPhpPage.php';
+    const url = 'php/send_email.php';
     const data = {
       email: emailValue,
       name: fullNameValue,
@@ -33,19 +33,28 @@ form.addEventListener('submit', e => {
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
-                let response = JSON.parse(xhr.responseText);
-                if(response === '1') {
-                    swal("Hi", "The email has been successfully sent to our team", "success");
-                    resetForm();
+                if (xhr.responseText) {
+                    let response = JSON.parse(xhr.responseText);
+                    if (response.status === 'success') {
+                        swal("היי", response.message, "success");
+                        resetForm();
+                    }
+                } else {
+                    swal("אופס", "ישנה תקלה, יש לנסות שוב מאוחר יותר", "error");
                 }
             } else if (this.readyState === 4 && this.status !== 200) {
-                let response = JSON.parse(xhr.responseText); 
-                if(response === '33') {
-                    swal("error", "A problem occurred", "error");
+                if (xhr.responseText) {
+                    let response = JSON.parse(xhr.responseText);
+                    if (!response.status) {
+                        swal("error", "A problem occurred", "error");
+                    }
+                } else {
+                    console.error("Response is empty");
                 }
             }
         }
     };
+    
 xhr.send(dataJSON);
 
  }else{
