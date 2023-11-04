@@ -8,6 +8,11 @@ hamburger.addEventListener("click", (e) => {
 })
 
 
+$('#js-tilt').tilt({
+    glare: true,
+    maxGlare: .1,
+})
+
 
 
 window.onscroll = function() {
