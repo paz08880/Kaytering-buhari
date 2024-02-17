@@ -17,11 +17,13 @@ html{
     touch-action: manipulation;
 }
 
-
 header{
     background-color: #FFFFFF;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
-
+    z-index:1111;
+    position: fixed;
+    width: 100%;
+    top:0;
 }
 
 nav{
@@ -138,8 +140,29 @@ nav ul li a:hover::before, nav ul li a:hover::after{
     opacity: 0;
 }
 
+    header.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        animation: fadeInDown 0.5s ease-in-out;    
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media(max-width:990px){
+
+    header{
+        position: static!important;
+    }
 
     #hamburger{
         display: flex;
@@ -223,17 +246,30 @@ nav ul li a:hover::before, nav ul li a:hover::after{
 
 .banner{
     min-width: 100%;
-    min-height: 70vh;
+    min-height: 50vh;
     padding:20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    background: linear-gradient(to right bottom, white 40%, rgb(242, 163, 163) 60%);
+    background-color:#EEE2DC;
     backdrop-filter: blur(5px); /* Adjust the value as needed */
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
+    z-index:1111;
+}
 
+.banner-content{
+    position: absolute;
+    top:70%;
+    width: 1170px;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.svg-banner{
+   position: absolute;
+   z-index:-1;
+   top:60%;
+   width: 100%;
+   left:50%;
+   transform: translate(-50%,-50%);
 }
 
 .container{

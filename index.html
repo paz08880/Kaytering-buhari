@@ -49,9 +49,10 @@
             </nav>
         </header>
 
+
         <div class="banner">
             <div class="container">
-                <div class="flex">
+                <div class="flex banner-content">
                     <img src="images/logo.png" data-tilt id = "js-tilt" alt="">
                     <div class="content">
                         <div class="main-title">ברוכים הבאים לבוכרי עתיק בוטיק</div>
@@ -67,7 +68,10 @@
                 </div>
             </div>
         </div>
-
+        <svg class = "svg-banner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#EEE2DC" fill-opacity="1" d="M0,0L30,21.3C60,43,120,85,180,128C240,171,300,213,360,229.3C420,245,480,235,540,240C600,245,660,267,720,272C780,277,840,267,900,224C960,181,1020,107,1080,90.7C1140,75,1200,117,1260,117.3C1320,117,1380,75,1410,53.3L1440,32L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+        </svg>
+    
         <div class="about" id = "about">
             <div class="container">
                 <div class="title">אז מה אנחנו מציעים?</div>
@@ -196,7 +200,7 @@
                 </div>
 
                 <div class = "title">קינוחים</div>
-                    <div class="grid">
+                    <div class="sweets">
                         <img src="images/fruit.jpg" alt="">
                         <img src="images/Sweets.jpg" alt="">
                         <img src="images/WhatsApp Image 2023-10-08 at 18.16.22.jpeg" alt="">
@@ -209,7 +213,7 @@
 
        
         <style>
-            .grid{
+            .sweets{
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap:20px;
@@ -218,7 +222,7 @@
 
             }
 
-            .grid img{
+            .sweets img{
                 padding:20px;
                 width: 350px;
                 object-fit: cover;
@@ -228,17 +232,17 @@
                 filter:grayscale(30%);
                 cursor: pointer;
             }
-            .grid img:hover{
+            .sweets img:hover{
                 transition:0.3s ease-in-out;
                  filter:grayscale(0%);
 
             }
 
             @media(max-width:990px){
-                .grid{
+                .sweets{
                     grid-template-columns: repeat(1, 1fr)!important;
                 }
-                .grid img{
+                .sweets img{
                     width:300px;
                     height:300px;
                 }
