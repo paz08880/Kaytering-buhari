@@ -255,14 +255,6 @@ nav ul li a:hover::before, nav ul li a:hover::after{
     z-index:1111;
 }
 
-.banner-content{
-    position: absolute;
-    top:70%;
-    width: 1170px;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
-
 .svg-banner{
    position: absolute;
    z-index:-1;
@@ -640,6 +632,8 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
+
 }
 
 .card {
